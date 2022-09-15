@@ -149,8 +149,10 @@ html,body{
     .main__nav{
         display: flex;
         flex-direction: column;
-        height: max-content;
-
+        align-self: center;
+        flex-wrap: nowrap;
+        max-height: 100%;
+        width: 100%;
     }
     .main__nav-item{
         font-size: 18px;
@@ -162,6 +164,13 @@ html,body{
 }
 
 @media screen and (max-width: 375px){
+    .main__nav{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        align-self: center;
+
+    }
     .content__image{
         max-width: 250px;
         max-height: max-content;
